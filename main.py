@@ -3,9 +3,12 @@
 # count_words("The cake is done. It is a big cake!")
 # --> {"cake":2, "big":1, "is":2, "the":1, "a":1, "it":1}
 
+from opcode import hasjabs
+
+
 def read_file_content():
     # [assignment] Add your code here
-    with open("story.txt") as f:
+    with open("story.txt") as f:  # path to file or file name
         for line in f:
           #  print(line)
             #text = line.split()
@@ -19,7 +22,7 @@ print(read_file_content())
 def count_words():
     # [assignment] Add your code here
 
-    with open("story.txt") as f:
+    with open("story.txt") as f:  # path to file or file name
         for line in f:
             text = line.split()
             counts = dict()
